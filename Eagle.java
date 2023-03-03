@@ -24,8 +24,8 @@ public class Eagle extends Bird implements Fly{
     }
 
     @Override
-    public void takeOff() {
-        if (!this.flying && this.altitude == 1) {
+    public void takeOff() {  
+        if (!this.flying && this.altitude <= 0) {
             this.flying = true;
             System.out.printf("%s take off in the air.%n", this.getName());
         }
